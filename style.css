@@ -1,3 +1,15 @@
+/* Profile photo style for circular display */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0073b1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
 /* Reset & basics */
 * {
   box-sizing: border-box;
