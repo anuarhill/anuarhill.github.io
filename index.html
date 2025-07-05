@@ -1,1 +1,35 @@
-<p>This is going to be my Profile page</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anuar Hill | Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <img src="profile.jpg" alt="Anuar Hill" class="profile-photo" />
+        <h1>Hello, I'm Anuar Hill 👋</h1>
+        <p>DevOps & IoT Enthusiast • Cloud Learner • Engineer by Background</p>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/anuarhill" target="_blank">LinkedIn</a>
+            <a href="https://github.com/anuarhill" target="_blank">GitHub</a>
+            <a href="mailto:anuar.hill@email.com">Email Me</a>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/moqgywnz" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <!-- Honeypot field -->
+                <input type="text" name="_gotcha" style="display:none">
+                <!-- Google reCAPTCHA widget -->
+                <div class="g-recaptcha" data-sitekey="6LeqEXgrAAAAAPBKwLmJjtfPKKoWv8tl53Hp5Pd6"></div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
